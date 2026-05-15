@@ -1,4 +1,4 @@
-ARES-Bot 🤖
+**ARES-Bot**
 
 Autonomous Wheeled-Leg Security and Search-Rescue Robot Using Edge AI and Multi-Modal Sensor Fusion
 
@@ -8,58 +8,39 @@ Team Supervisor: Ejoe Tso
 
 All rights reserved by Ejoe Tso.
 
-📑 Table of Contents
+**Table of Contents**
 
 Core Capabilities
-
 System Architecture
-
 Hardware & Software Stack
-
 ROS Node Structure
-
 Directory Structure
-
 Getting Started
 
-16-Week R&D Roadmap
-
+**16-Week R&D Roadmap**
 License & Acknowledgements
-
-🚀 Core Capabilities
-
+**Core Capabilities
+**
 Wheeled-Leg Balancing: Advanced LQR control systems for self-balancing, dual-leg length control for roll compensation, and scissor-effect mitigation.
-
 SLAM Navigation: LiDAR and Visual Inertial Odometry (VIO) fusion for robust indoor/outdoor mapping, obstacle avoidance, and waypoint patrol.
-
 AI Vision System: Real-time object detection and human tracking using YOLO and DeepSORT running on TensorRT. Capable of suspicious activity recognition.
-
 Victim Localization: Fusion of thermal imaging and audio microphone arrays to detect heat signatures and localize shouting in search-and-rescue scenarios.
-
 Remote Dashboard: Web-based interface for remote monitoring, displaying robot maps, streaming multi-modal camera feeds, and real-time AI-driven alerts.
 
-🧠 System Architecture
-
-ARES-Bot utilizes a multi-layered software and hardware architecture:
-
+**System Architecture
+** ARES-Bot utilizes a multi-layered software and hardware architecture:
 Mobility Layer: Wheel-leg balancing, PID/LQR control, and autonomous movement execution.
-
 Sensor Layer: Stereo Camera, Thermal Camera, LiDAR, IMU, Audio Mic Array.
-
 Localization Layer: VIO, SLAM (2D/3D), MSCKF, GPS Fusion.
-
 AI Layer: Human detection, victim localization, suspicious activity detection, object tracking.
-
 ROS Integration Layer: Custom ROS topics, Services, Actions, and Navigation Stack integration.
-
 Application Layer: Patrol system, mobile surveillance logic, rescue monitoring, and alert dashboard.
 
-💻 Hardware & Software Stack
-
-Hardware
-
+**Hardware & Software Stack
+**
+**Hardware
+**
 Main Robot Platform: T-REX Wheeled-Leg Robot
-
 Edge AI Processor: Horizon RDK-X3
 
 Sensors: LiDAR, Thermal Camera, USB Stereo Camera, Microphone Array, IMU
@@ -76,7 +57,7 @@ AI & Deep Learning: PyTorch, TensorRT
 
 Visualization/Simulation: RViz, Gazebo, Foxglove Studio
 
-🕸️ ROS Node Structure
+**ROS Node Structure**
 
 The system is distributed across several specialized ROS nodes:
 
@@ -92,8 +73,8 @@ The system is distributed across several specialized ROS nodes:
 /ares_alert_node
 
 
-📂 Directory Structure
-
+** Directory Structure
+**
 ARES-Bot/
 ├── src/
 │   ├── ai_models/          # YOLO, PyTorch, and DeepSORT tracking models
@@ -109,8 +90,7 @@ ARES-Bot/
 ├── evaluation/             # Metrics, test results, and performance graphs
 └── README.md
 
-
-🛠️ Getting Started
+**Getting Started**
 
 1. Prerequisites
 
@@ -148,23 +128,18 @@ ros2 launch ares_bringup robot_core.launch.py
 
 (Refer to the documentation/ folder for specific launch commands related to the AI Vision System and Dashboard).
 
-📅 16-Week R&D Roadmap
+**16-Week R&D Roadmap**
 
 This project is structured around a comprehensive 16-week facilitation guide:
 
 Phase 1 (Weeks 1-2): Project Foundation & Environment Setup
-
 Phase 2 (Weeks 3-5): Mobility Control & SLAM Navigation
-
 Phase 3 (Weeks 6-8): AI Vision System Integration
-
 Phase 4 (Weeks 9-11): Multi-Modal Victim Localization
-
 Phase 5 & 6 (Weeks 12-14): Dashboard UI & Full System Integration
-
 Phase 7 (Weeks 15-16): Research Evaluation & Final Demonstration
 
-📜 License & Acknowledgements
+License & Acknowledgements
 
 Copyright © 2026 ARES-Bot Research Team.
 
